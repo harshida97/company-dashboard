@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+ /* Sidebar background color */
+  --color-maincolor: oklch(39.3% 0.095 152.535); 
+
+  /* Optional brand color 
+  --color-brand-teal: oklch(62% 0.15 180); */
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #f9fafb;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
