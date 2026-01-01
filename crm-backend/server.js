@@ -14,14 +14,11 @@ const app = express();
 // --- CORS CONFIGURATION ---
 
 app.use(cors({
- origin: [
-  "https://company-dashboard-dab6ahxmo-harshidas-projects-8692e19e.vercel.app",
-  "https://company-dashboard.vercel.app", 
-  "http://localhost:3000"
-],
+  origin: process.env.FRONTEND_URL || "*", 
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"]
 }));
+  
 
 app.use(express.json()); 
 
