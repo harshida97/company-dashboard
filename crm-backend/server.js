@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDb from './config/connectDb.js';
-import saleRoutes from './routes/saleRoutes.js';
+import saleRoutes from './routes/SaleRoutes.js';
 
 dotenv.config();
 
