@@ -15,10 +15,11 @@ const app = express();
 // Important: Use only ONE cors configuration. 
 // Remove the trailing slash from your Vercel URL.
 app.use(cors({
-  origin: [
-    "https://company-dashboard-dab6ahxmo-harshidas-projects-8692e19e.vercel.app", 
-    "http://localhost:3000"
-  ],
+ origin: [
+  "https://company-dashboard-dab6ahxmo-harshidas-projects-8692e19e.vercel.app",
+  "https://company-dashboard.vercel.app", 
+  "http://localhost:3000"
+],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"]
 }));
