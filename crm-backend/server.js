@@ -12,8 +12,7 @@ connectDb();
 const app = express();
 
 // --- CORS CONFIGURATION ---
-// Important: Use only ONE cors configuration. 
-// Remove the trailing slash from your Vercel URL.
+
 app.use(cors({
  origin: [
   "https://company-dashboard-dab6ahxmo-harshidas-projects-8692e19e.vercel.app",
