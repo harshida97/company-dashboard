@@ -14,4 +14,4 @@ const saleSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-export default mongoose.model('Sale', saleSchema);
+export default mongoose.model('Sale', saleSchema, 'sale');
